@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <style>
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        h3{
+            text-decoration: underline;
+        }
+        .quiz-container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .question input {
+            margin-right: 10px;
+        }
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Basic Quiz Concept</h1>
+    <h3>Choose the correct answer for the quiz.</h3>
+    <div class="quiz-container">
+        <form id="quizForm">
+            <div class="question">
+                <label>1. What is the capital of France?</label>
+                <input type="radio" id="q1a" name="q1" value="Berlin">
+                <label for="q1a">Rome</label><br>
+                <input type="radio" id="q1b" name="q1" value="Madrid">
+                <label for="q1b">London</label><br>
+                <input type="radio" id="q1c" name="q1" value="Paris">
+                <label for="q1c">Paris</label>
+            </div>
+
+            <div class="question">
+                <label>2. What is 25 + 25?</label>
+                <input type="radio" id="q2a" name="q2" value="43">
+                <label for="q2a">43</label><br>
+                <input type="radio" id="q2b" name="q2" value="64">
+                <label for="q2b">64</label><br>
+                <input type="radio" id="q2c" name="q2" value="50">
+                <label for="q2c">50</label>
+            </div>
+
+            <div class="question">
+                <label>3. Which planet is known as the Red Planet?</label>
+                <input type="radio" id="q3a" name="q3" value="Earth">
+                <label for="q3a">Earth</label><br>
+                <input type="radio" id="q3b" name="q3" value="Mars">
+                <label for="q3b">Mars</label><br>
+                <input type="radio" id="q3c" name="q3" value="Jupiter">
+                <label for="q3c">Jupiter</label>
+            </div>
+            <div class="question">
+                <label>4. What is 2 * 50?</label>
+                <input type="radio" id="q4a" name="q4" value="43">
+                <label for="q4a">43</label><br>
+                <input type="radio" id="q4b" name="q4" value="100">
+                <label for="q4b">100</label><br>
+                <input type="radio" id="q4c" name="q4" value="50">
+                <label for="q4c">50</label>
+            </div>
+            <div class="question">
+            <label>5. What does the acronym "CPU" stand for?</label>
+                <input type="radio" id="q5a" name="q5" value="Central Processing Unit">
+                <label for="q5a">Central Processing Unit</label><br>
+                <input type="radio" id="q5b" name="q5" value="Computer Processing Unit">
+                <label for="q5b">Computer Processing Unit</label><br>
+                <input type="radio" id="q5c" name="q5" value="Central Power Unit">
+                <label for="q5c">Central Power Unit</label>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
